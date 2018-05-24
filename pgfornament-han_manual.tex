@@ -5,6 +5,7 @@
 \setmainfont{Linux Libertine O}
 \setsansfont{Linux Biolinum O}
 
+\usepackage{ragged2e}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{pgfornament-han}
 \usetikzlibrary{chains}
@@ -99,11 +100,11 @@
 \pagestyle{fancy}
 \fancypagestyle{plain}{\pagestyle{fancy}}
 
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks]{hyperref}
 
-\title{汉风图纹 \texttt{pgfornament-han} v0.32}
+\title{汉风图纹 \texttt{pgfornament-han}}
 \author{林莲枝、张晨南}
-\date{v0.32 2018/04/09\\\url{https://github.com/liantze/pgfornament-han}}
+\date{2018/05/15\\\url{https://github.com/liantze/pgfornament-han}}
 
 \begin{document}
 
@@ -501,14 +502,18 @@
 
 \clearpage
 \appendix
+\setlength{\parindent}{2\ccwd}\justifying
 \ctexset{section/name={附录}}
 \phantomsection\addcontentsline{toc}{part}{附录}
 
 \section{传统中国颜色 \texttt{cncolours.sty}}
 
 \begingroup
-\centering
+
+
 这是我比较早以前做的一个宏包了，色卡取自 \url{http://ylbook.com/cms/web/chuantongsecai/chuantongsecai.htm}。
+
+感谢网友\href{https://github.com/heangfat}{\emph{端憲}}，加入了三正色，以及提供繁体中文的颜色名称。
 
 \bigskip
 
@@ -517,6 +522,7 @@
   \fcolorbox{乌黑}{#1}{\makebox[2em]{\phantom{M}}}~\makebox[5em][l]{#1}%
 }
 
+\begin{RaggedRight}
 \showcolour{粉红}
 \showcolour{妃色}
 \showcolour{品红}
@@ -675,6 +681,181 @@
 \showcolour{铜绿}
 \showcolour{乌金}
 \showcolour{老银}
+\showcolour{正青}
+\showcolour{正赤}
+\showcolour{正黄}
+\end{RaggedRight}
+
+\clearpage
+
+\CJKfontspec{Noto Serif CJK TC}
+以下是繁體中文字體名稱，由網友\href{https://github.com/heangfat}{\emph{端憲}}提供。姜黃、薑黃是兩種植物。未審此指何種，闕之。
+
+\bigskip
+
+\begin{RaggedRight}
+\showcolour{粉紅}
+\showcolour{妃色}
+\showcolour{品紅}
+\showcolour{桃紅}
+\showcolour{海棠紅}
+\showcolour{石榴紅}
+\showcolour{櫻桃色}
+\showcolour{銀紅}
+\showcolour{大紅}
+\showcolour{絳紫}
+\showcolour{緋紅}
+\showcolour{胭脂}
+\showcolour{朱紅}
+\showcolour{丹}
+\showcolour{彤}
+\showcolour{茜色}
+\showcolour{火紅}
+\showcolour{赫赤}
+\showcolour{嫣紅}
+\showcolour{洋紅}
+\showcolour{炎}
+\showcolour{赤}
+\showcolour{綰}
+\showcolour{棗紅}
+\showcolour{檀}
+\showcolour{殷紅}
+\showcolour{酡紅}
+\showcolour{酡顏}
+\showcolour{鵝黃}
+\showcolour{鴨黃}
+\showcolour{櫻草色}
+\showcolour{杏黃}
+\showcolour{杏紅}
+\showcolour{橘黃}
+\showcolour{橙黃}
+\showcolour{橘紅}
+\showcolour{姜黄}
+\showcolour{緗色}
+\showcolour{橙色}
+\showcolour{茶色}
+\showcolour{駝色}
+\showcolour{昏黃}
+\showcolour{栗色}
+\showcolour{椶色}
+\showcolour{椶綠}
+\showcolour{椶黑}
+\showcolour{椶紅}
+\showcolour{椶黃}
+\showcolour{赭色}
+\showcolour{琥珀}
+\showcolour{褐色}
+\showcolour{枯黃}
+\showcolour{黃櫨}
+\showcolour{秋色}
+\showcolour{秋香色}
+\showcolour{嫩綠}
+\showcolour{柳黃}
+\showcolour{柳綠}
+\showcolour{竹青}
+\showcolour{蔥黃}
+\showcolour{蔥綠}
+\showcolour{蔥青}
+\showcolour{青蔥}
+\showcolour{油綠}
+\showcolour{綠沉}
+\showcolour{碧色}
+\showcolour{碧綠}
+\showcolour{青碧}
+\showcolour{翡翠色}
+\showcolour{草綠}
+\showcolour{青色}
+\showcolour{青翠}
+\showcolour{青白}
+\showcolour{鴨卵青}
+\showcolour{蟹殼青}
+\showcolour{鴉青}
+\showcolour{綠色}
+\showcolour{豆綠}
+\showcolour{豆青}
+\showcolour{石青}
+\showcolour{玉色}
+\showcolour{縹}
+\showcolour{艾綠}
+\showcolour{松柏綠}
+\showcolour{松花綠}
+\showcolour{松花色}
+\showcolour{藍}
+\showcolour{靛青}
+\showcolour{靛藍}
+\showcolour{碧藍}
+\showcolour{蔚藍}
+\showcolour{寶藍}
+\showcolour{藍灰色}
+\showcolour{藏青}
+\showcolour{藏藍}
+\showcolour{黛}
+\showcolour{黛綠}
+\showcolour{黛藍}
+\showcolour{黛紫}
+\showcolour{紫色}
+\showcolour{紫醬}
+\showcolour{醬紫}
+\showcolour{紫檀}
+\showcolour{紺青}
+\showcolour{紫棠}
+\showcolour{青蓮}
+\showcolour{群青}
+\showcolour{雪青}
+\showcolour{丁香色}
+\showcolour{藕色}
+\showcolour{藕荷色}
+\showcolour{蒼色}
+\showcolour{蒼黃}
+\showcolour{蒼青}
+\showcolour{蒼黑}
+\showcolour{蒼白}
+\showcolour{水色}
+\showcolour{水紅}
+\showcolour{水綠}
+\showcolour{水藍}
+\showcolour{淡青}
+\showcolour{湖藍}
+\showcolour{湖綠}
+\showcolour{精白}
+\showcolour{象牙白}
+\showcolour{雪白}
+\showcolour{月白}
+\showcolour{縞}
+\showcolour{素}
+\showcolour{荼白}
+\showcolour{霜色}
+\showcolour{花白}
+\showcolour{魚肚白}
+\showcolour{瑩白}
+\showcolour{灰色}
+\showcolour{牙色}
+\showcolour{鉛白}
+\showcolour{玄色}
+\showcolour{玄青}
+\showcolour{烏色}
+\showcolour{烏黑}
+\showcolour{漆黑}
+\showcolour{墨色}
+\showcolour{墨灰}
+\showcolour{黑色}
+\showcolour{緇色}
+\showcolour{煤黑}
+\showcolour{黧}
+\showcolour{黎}
+\showcolour{黝}
+\showcolour{黝黑}
+\showcolour{黯}
+\showcolour{赤金}
+\showcolour{金色}
+\showcolour{銀白}
+\showcolour{銅綠}
+\showcolour{烏金}
+\showcolour{老銀}
+\showcolour{正青}
+\showcolour{正赤}
+\showcolour{正黃}
+\end{RaggedRight}
 
 \endgroup
 
@@ -686,7 +867,7 @@
 
 \bigskip
 
-\begin{tcblisting}{listing side comment,title={使用范例},pdf comment={XiaoShanSample.pdf}}
+\begin{tcblisting}{listing side comment,title={使用范例},pdf comment={xiaoshan-sample.pdf}}
 \documentclass{ctexbeamer}
 
 \usetheme{Xiaoshan}
@@ -713,5 +894,70 @@
 ......
 \end{document}
 \end{tcblisting}
+
+
+\clearpage
+
+\section{神马浮云 Beamer 主题 Heavenly Clouds Beamer Theme \texttt{beamerthemeHeavenlyClouds.sty}}
+
+这个Beamer主题是我一次病中摸鱼摸出来的，脑洞略大。每一页的背景的云彩纹样，位置、大小、深浅都是随机的，所以如果内容页数比较多，编译时运算可能会比较花时间，请自行斟酌使用此主题。
+
+\bigskip
+
+\begin{tcblisting}{listing side comment,title={使用范例},pdf comment={heavenlyclouds-sample.pdf}}
+\documentclass{ctexbeamer}
+\usetheme{HeavenlyClouds}
+
+\author{林莲枝}
+\title{神马浮云\\Beamer主题}
+\subtitle{\texttt{pgfornament-han}附录福利}
+
+\begin{document}
+
+\begin{frame}[noframenumbering]
+  \maketitle
+\end{frame}
+
+\section{简介一}
+
+\begin{frame}[fragile,allowframebreaks]
+  \frametitle{此主题脑洞略大}
+  ...
+\end{frame}
+...
+\end{document}
+\end{tcblisting}
+
+一些注意事项：
+\begin{itemize}
+  \item Mac 或 Linux 系统上，\texttt{ctex}是不提供隶书\mintinline{latex}{\lishu}的，请自己设定。例：
+
+  \mintinline{latex}{\providecommand{\lishu}{\CJKfontspec{Libian SC}[BoldFont=Baoli SC,Scale=1.2]}}
+
+  \item 标题页的寿字纹，可以用各自高校的标志代替。中国高校校徽很多都是圆形的。确保一下背景是透明色的 png 或 pdf 档就可以了。
+
+  \mintinline{latex}{\titlegraphic{\includegraphics[width=2cm]{logo}}}
+
+
+  \item 也可以在导言区加一句 \mintinline{latex}{\alttitlecircle}，会得到另一种标题页的装饰纹样。效果如下：
+
+  \begin{tikzpicture}%[transform shape,scale=0.5]
+    \newbox{\circleelem}%
+    \savebox{\circleelem}{%
+      \tikzset{pgfornamentstyle/.style={transform shape}}%
+      \pgfornamenthan[width=0.5236cm,
+         color=殷红!80!black,
+         symmetry=h]{74}%
+    }
+    \begin{scope}[decoration={markings, mark=between positions 0 and 1 step 0.5236cm
+    with { \node[transform shape,inner sep=0pt,outer sep=0pt]{\usebox{\circleelem}}; }} ]
+    \path [postaction={decorate}] circle (1cm);
+    \end{scope}%
+    \node {\pgfornamenthan[width=1.25cm,color=殷红]{56}};
+  \end{tikzpicture} \emph{效果有可能有点狂，请视场合斟酌使用。}
+
+
+\end{itemize}
+
 
 \end{document}
